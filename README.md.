@@ -1,0 +1,140 @@
+# DECISIO – Intelligent Decision Analysis Platform
+
+**Think clearly. Make smarter decisions.**
+
+DECISIO is a Flutter-based decision intelligence application that helps users evaluate multiple alternatives using weighted criteria, calculate scores, compare options visually, and identify the highest-scoring alternative.
+
+## Features
+
+- **Decision Creation:** Create decisions and add multiple alternatives.
+- **Weighted Evaluation:** Rate alternatives against different criteria.
+- **Intelligent Scoring:** Calculate normalized weighted scores out of 100.
+- **Best Alternative:** Identify the highest-scoring option.
+- **Visual Analytics:** Compare alternatives through interactive bar charts.
+- **Decision History:** Save and revisit previous decisions.
+- **Local Persistence:** Store decision history using SharedPreferences.
+
+## Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Flutter | Application development |
+| Dart | Programming language |
+| fl_chart | Visual analytics |
+| SharedPreferences | Local data persistence |
+| Material Design | User interface |
+
+## How DECISIO Works
+
+1. Create a decision question.
+2. Add the alternatives you want to compare.
+3. Rate each alternative against the available criteria.
+4. Adjust the importance of each criterion using weights.
+5. DECISIO calculates the weighted scores.
+6. View the highest-scoring alternative and visual comparison.
+7. Access previous decisions through Decision History.
+
+## Scoring Methodology
+
+DECISIO uses a normalized weighted scoring approach.
+
+**Formula:**
+
+Score = Σ (Rating × Criterion Weight / Total Weight) × 10
+
+Ratings range from 0 to 10. Criterion weights are normalized before calculating the final score, producing a result out of 100.
+
+## Project Structure
+
+```text
+decisio/
+├── lib/
+│   ├── main.dart
+│   ├── history_screen.dart
+│   ├── models/
+│   │   └── decision.dart
+│   ├── screens/
+│   │   ├── home_screen.dart
+│   │   ├── create_decision_screen.dart
+│   │   └── result_screen.dart
+│   ├── services/
+│   │   └── decision_engine.dart
+│   └── widgets/
+│       └── score_chart.dart
+├── test/
+│   └── widget_test.dart
+├── pubspec.yaml
+└── README.md
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Flutter SDK
+- Dart SDK
+- Visual Studio Code or Android Studio
+- Chrome or an Android emulator
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/anusha123953/DECISIO.git
+```
+
+Navigate into the project:
+
+```bash
+cd DECISIO
+```
+
+Install dependencies:
+
+```bash
+flutter pub get
+```
+
+Run the application in Chrome:
+
+```bash
+flutter run -d chrome
+```
+
+Run tests:
+
+```bash
+flutter test
+```
+
+Analyze the project:
+
+```bash
+flutter analyze
+```
+
+## Project Status
+
+The core application workflow is implemented, including decision creation, weighted scoring, result visualization, and local decision history.
+
+## Future Enhancements
+
+- Custom user-defined criteria.
+- More advanced decision analysis algorithms.
+- Export decision reports.
+- Improved data visualization.
+- Cloud synchronization and user accounts.
+- Collaborative decision-making.
+
+## Developer
+
+**Anusha Shetty**
+
+Computer Science and Engineering Student
+
+GitHub: [@anusha123953](https://github.com/anusha123953)
+
+---
+
+**DECISIO – Every choice deserves clarity.**
